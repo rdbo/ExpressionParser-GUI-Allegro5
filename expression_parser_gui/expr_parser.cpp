@@ -29,6 +29,7 @@ void ExpressionParser::Init()
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO(); (void)io;
+    io.IniFilename = NULL;
     ImFontConfig font_cfg;
 	font_cfg.FontDataOwnedByAtlas = false;
 	roboto = io.Fonts->AddFontFromMemoryTTF(roboto_regular, sizeof(roboto_regular), FONT_SIZE, &font_cfg);
