@@ -12,5 +12,5 @@
 <p>What to input?</p>
 <p>Operators: +-*/^%</p>
 <p>Math functions: abs, acos, asin, atan, atan2, ceil, cos, cosh, e, exp, fac, floor, ln, log, ncr, npr, pi, pow, root, sin, sinh, sqrt, tan, tanh</p>
-<p>Credits: <a href="https://github.com/codeplea/tinyexpr">tinyexpr</a>,<a href="https://fonts.google.com/specimen/Roboto">Roboto Font</a></p>
+<p>Credits: <a href="https://github.com/codeplea/tinyexpr">tinyexpr</a>,<a href="https://fonts.google.com/specimen/Roboto">Roboto Font</a>,<a href="https://github.com/ocornut/imgui">imgui</a></p>
 <img src="https://github.com/rdbo/Expression-Parser-GUI-Allegro5/blob/master/expression_parser_gui.png"/>
