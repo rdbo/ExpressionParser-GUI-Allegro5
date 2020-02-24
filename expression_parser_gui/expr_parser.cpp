@@ -5,6 +5,11 @@ void ImGuiSetupStyle();
 void GetDisplayWindow();
 bool resized = true;
 
+double PMath::root(double num, double rt)
+{
+    return pow(num, 1 / rt);
+}
+
 void ExpressionParser::Init()
 {
     al_init();

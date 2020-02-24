@@ -35,3 +35,8 @@ namespace ExpressionParser
     void Solve(int i);
     void Shutdown();
 }
+
+namespace PMath
+{
+    double root(double num, double rt);
+}

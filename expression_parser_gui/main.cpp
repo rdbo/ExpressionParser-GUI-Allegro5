@@ -22,9 +22,16 @@ std::string CreateNewLabel(const char* label);
 void ResetID();
 void ResetOperation(int i);
 
+static te_variable vars[] = 
+{
+	{"root", PMath::root, TE_FUNCTION2}
+};
+
 void ExpressionParser::Solve(int i)
 {
-    output[i] = te_interp(expr[i], 0);
+    te_expr* n = te_compile(expr[i], vars, 1, nullptr);
+    output[i] = te_eval(n);
+    te_free(n);
 	snprintf(buffer[i], sizeof(buffer[i]), "%s%i%s", "%.", decimals[i], "f");
 }
 
