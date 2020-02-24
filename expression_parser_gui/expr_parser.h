@@ -1,4 +1,10 @@
 #include "pch.h"
+#define MIN_WIDTH 450
+#define MIN_HEIGHT 450
+#define MAX_WIDTH 1920
+#define MAX_HEIGHT 1089
+#define DEFAULT_WIDTH 640
+#define DEFAULT_HEIGHT 480
 #define FONT_SIZE 18
 #define MAX_DECIMALS 15
 #define MAX_OPERATIONS 1000

@@ -12,12 +12,14 @@ void ExpressionParser::Init()
     al_install_mouse();
     al_init_primitives_addon();
     al_set_new_display_flags(ALLEGRO_RESIZABLE);
-    display = al_create_display(640, 480);
+    display = al_create_display(DEFAULT_WIDTH, DEFAULT_HEIGHT);
     al_set_window_title(display, "ExpressionParser-GUI");
     queue = al_create_event_queue();
     al_register_event_source(queue, al_get_display_event_source(display));
     al_register_event_source(queue, al_get_keyboard_event_source());
     al_register_event_source(queue, al_get_mouse_event_source());
+    al_set_window_constraints(display, MIN_WIDTH, MIN_HEIGHT, MAX_WIDTH, MAX_HEIGHT);
+    al_apply_window_constraints(display, true);
 
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
